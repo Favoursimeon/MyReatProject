@@ -1,0 +1,80 @@
+
+
+
+
+
+{
+  "Products": [
+    { "id":    2,
+      "name": "African Saladus",
+      "image": "https://i.ytimg.com/vi/0bojPYzHvY8/maxresdefault.jpg",
+      "price": 150.99,
+      "order": "Add to Cart"
+    },
+    {  "id":    3,
+      "name": "Amala Gbegiri and Ewedru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy9PS1tgmyaOSY6SpWwuk0wBa2XYXtPPno7g&usqp=CAU",
+      "price": 250.99,
+      "order": "Add to Cart"
+    },
+    { "id"    :4,
+      "name": "Egusi with Semo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HuhSctRdfA9qKDwqI2WxwCzQ_qRDVitN1MLt50-51kzISviMHUtP16uIn-Wwtcmpjtk&usqp=CAU",
+      "price": 256.53,
+      "order": "Add to Cart"
+
+    },
+    { "id":5,
+      "name": "Jollof Rice and Chicken",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq9GYCTrsPd-AhYlhfI7VPTsyHxWVDSAABmw&usqp=CAU",
+      "price":150.99, 
+      "order": "Add to Cart"
+    },
+    { "id":6,
+      "name": "Moi-moi and Pap",
+      "image": "https://slyzplace.com/assets/uploads/2020/04/moi-pap-450x338.jpg",
+      "price": 80.99,
+      "order": "Add to Cart"
+    },
+    {  "id":7,
+      "name": "Oha soup and Semo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9x6nlirStgZcacITidmPUqCrPLN2MYhGr0w&usqp=CAU",
+      "price": 300.99,
+      "order": "Add to Cart"
+    },
+    {   "id":8,
+        "name": "Pepper Soup with Chicken",
+        "image": "https://eatwellabi.com/wp-content/uploads/2022/08/Nigerian-chicken-pepper-soup-21.jpg",
+        "price": 800.99,
+        "order": "Add to Cart"
+      },
+      { "id":9,
+        "name": "Ukwa",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWKW_toCbpyZClkH2bKFnh8HQPpF60Q32Hwg&usqp=CAU",
+        "price": 150.99,
+        "order": "Add to Cart"
+      },
+      { "id":10,
+        "name": "Vegetable Soup",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDXylOAjZXHTHP7fc8twSxCjtm2EvW8f8_oQ&usqp=CAU",
+        "price": 500.99,
+        "order": "Add to Cart"
+      },
+      { "id":11,
+        "name": "Yam and Egg sauce",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWu2K0bHmGaeZux1oEbNiqcPRXFzdajsL41g&usqp=CAU",
+        "price": 200.99,
+        "order": "Add to Cart"
+      }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

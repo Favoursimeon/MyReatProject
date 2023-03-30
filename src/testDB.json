@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "id":1,
+            "name":"Test 1",
+            "price": 25,
+            "imageUrl":"hheihkfd"
+        },
+        {
+            "id":1,
+            "name":"Test 1",
+            "price": 25,
+            "imageUrl":"hheihkfd"
+        },
+        {
+            "id":1,
+            "name":"Test 1",
+            "price": 25,
+            "imageUrl":"hheihkfd"
+        }
+    ]
+}
