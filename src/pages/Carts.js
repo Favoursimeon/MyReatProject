@@ -5,8 +5,9 @@ import MenuItem from '../components/MenuItem'
 import "../styles/Menu.css";
 
 const Carts = () => {
- const cart = useSelector(state => state.cart.cart)
-;
+ const cart = useSelector(state => state.cart.cart);
+
+ console.log(cart)
   return (
     <div className="menu">
     <h1 className="menuTitle">Your Cart</h1>
@@ -22,6 +23,7 @@ const Carts = () => {
           price={menuItem.price}
           order={menuItem.order}
           id={menuItem.id}
+          quantity={menuItem.quantity}
         />
       );
     })}

@@ -7,6 +7,13 @@ import { EndPoint } from '../Services/ApiCall';
 import { useEffect } from 'react';
 import axios from 'axios';
 
+export const uuid = () => {
+	return 'xxxxxxxx-xxxx-4xxx-xxxx-xxxxxxxxxxxx'.replace(/[x]/g, (c) => {
+		const r = Math.floor(Math.random() * 16);
+		return r.toString(16);
+	});
+};
+
 function Menu() {
 
   const [productData, setProductData] = useState([])
@@ -14,7 +21,10 @@ function Menu() {
   const loadData = async () => {
     try {
       const response = await axios.get(`${EndPoint}/Products`)
-      setProductData(response.data)
+      let updatedProducts = response.data.map((item, i) => {
+        return item = {...item, ['id']: uuid()}
+      })
+      setProductData(updatedProducts)
       
     } catch (error) {
       console.log(error)

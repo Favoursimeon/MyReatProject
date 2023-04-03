@@ -9,7 +9,15 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      state.cart = [...state.cart, action.payload];
+      const existingItemIndex = state.cart.findIndex((item) => item.id === action.payload.id);
+      if(existingItemIndex !== -1) {
+        let updatedItems = [...state.cart];
+        updatedItems[existingItemIndex].quantity += 1;
+        state.cart = [...updatedItems];
+      }else{
+        state.cart = [...state.cart, {...action.payload, ['quantity']: 1}]
+      }
+      
       console.log(state.cart)
     },
     removeFromCart: (state, action) => {
