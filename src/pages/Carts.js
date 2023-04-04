@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useLocation, useNavigate } from 'react-router-dom';
+import { decreaseCart, increaseCart } from '../cartSlice';
 import MenuItem from '../components/MenuItem'
-import "../styles/Menu.css";
+import {useDispatch} from "react-redux";
+import "../styles/Carts.css"
 
 const Carts = () => {
+  const decrese = () => {
+
+  }
+  const [quant, setQuant] = useState()
  const cart = useSelector(state => state.cart.cart);
 
  console.log(cart)
@@ -13,9 +19,22 @@ const Carts = () => {
     <h1 className="menuTitle">Your Cart</h1>
     <h1>{cart.length === 0 ? "No Items Added" : ""}</h1>
 
-    <div className="menuList">
+    <div className="">
+    <table>
+         <thead>
+          <tr>
+            <th>ITEMS</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+            <th>ACTIONS</th>
+          </tr>
+        </thead>
+        <tbody>
     {cart?.map((menuItem, key) => {
+      console.log('menuitem', menuItem)
       return (
+      <>
+        
         <MenuItem
           key={key}
           image={menuItem.image}
@@ -25,8 +44,14 @@ const Carts = () => {
           id={menuItem.id}
           quantity={menuItem.quantity}
         />
+      </>
+      
       );
     })}
+        </tbody>
+
+    </table>
+
 </div>
     </div>  )
 }

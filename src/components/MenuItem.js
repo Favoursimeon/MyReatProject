@@ -42,7 +42,7 @@ function MenuItem(props) {
 
 
 
-  return (
+  return location.pathname !== '/Carts' ? (
     <>
       <div className="menuItem">
         <div style={{backgroundImage: `url(${image})`}}> </div>
@@ -66,7 +66,24 @@ function MenuItem(props) {
         )}
       </div>
     </>
+  ) : (
+    
+        
+          <tr>
+            <td>{name}</td>
+            <td>{price}</td>
+            <td>{quantity}</td>
+
+            <td>
+            <button onClick={handleDecreaseCart} style={core.button} disabled={disabled} className="trans">-</button>
+            <button onClick={handleIncreaseCart} style={core.button} className="trans">+</button>
+            <button onClick={() => dispatch(removeFromCart(id))} className="tran">
+            Remove
+          </button>
+            </td>
+          </tr>
+
   );
 }
 
-export default MenuItem;
+export default MenuItem
