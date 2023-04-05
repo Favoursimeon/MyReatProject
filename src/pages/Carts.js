@@ -23,6 +23,7 @@ const Carts = () => {
     <table>
          <thead>
           <tr>
+           <th>IMAGE</th>
             <th>ITEMS</th>
             <th>PRICE</th>
             <th>QUANTITY</th>

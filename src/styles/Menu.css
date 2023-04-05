@@ -74,10 +74,14 @@
     background-size: cover;
   }
   
-  /* .menuItem h1,
-  .menuItem p {
-    margin-left: 20px;
-  } */
+ .me{
+  width: 70px;
+  height: 70px;
+  object-fit:cover;
+  margin-right: 1rem;
+  border-radius: 5px;
+ }
+
   
   @media only screen and (max-width: 1300px) {
     .menuList {

@@ -1,4 +1,5 @@
 import {CommuteOutlined} from "@mui/icons-material";
+import { MenuList } from "@mui/material";
 import React, {useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
 import {useLocation} from "react-router-dom";
@@ -70,9 +71,11 @@ function MenuItem(props) {
     
         
           <tr>
+            <td><div className="me" style={{backgroundImage: `url(${image})`}}> </div></td>
             <td>{name}</td>
             <td>{price}</td>
             <td>{quantity}</td>
+
 
             <td>
             <button onClick={handleDecreaseCart} style={core.button} disabled={disabled} className="trans">-</button>

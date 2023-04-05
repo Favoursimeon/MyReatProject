@@ -44,7 +44,7 @@ table {
     
 
   .trans{
-    background-color:#91cec5; 
+    background-color:#125b50; 
         font-weight:bolder; 
         padding:10px 15px; 
         margin:10px;
@@ -57,6 +57,6 @@ table {
   }
 
   .trans:hover{
-    background-color: rgb(122, 134, 122);
+    background-color: lightgreen;
     color: black;
   }
